@@ -1,0 +1,142 @@
+/* Reset & Fonts */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fef9f4;
+  color: #4b3a2f;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px;
+  color: #b33a3a;
+}
+
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #4b3a2f;
+  font-weight: 600;
+}
+
+header nav a:hover {
+  color: #b33a3a;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-image {
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  margin: 0 10px;
+  background-color: #b33a3a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #f0d6c2;
+  color: #b33a3a;
+  border: 2px solid #b33a3a;
+}
+
+/* Photo Strip / Galleries */
+.photo-strip-container {
+  margin: 40px auto;
+  max-width: 90%;
+  text-align: center;
+}
+
+.photo-strip-container h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px;
+  color: #b33a3a;
+  margin-bottom: 20px;
+}
+
+.photo-strip {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+}
+
+.photo-strip img {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border: 8px solid #fff;
+  border-bottom: 30px solid #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.strip-photo:hover {
+  transform: scale(1.05) rotate(0deg);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Footer (optional) */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #7a6350;
+  border-top: 2px solid #d9cbb7;
+}

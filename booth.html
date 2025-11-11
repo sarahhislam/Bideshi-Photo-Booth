@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bideshi Photobooth</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Bideshi</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="upload.html">Upload</a>
+      <a href="best.html">Best of the Month</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Capture Your Moment</h1>
+    <p>Snap fun photos and mark your favorites as Best of the Month!</p>
+  </section>
+
+  <section class="photo-booth">
+    <video id="video" autoplay playsinline width="320" height="240" style="border-radius:12px; box-shadow:0 6px 12px rgba(0,0,0,0.1)"></video>
+    <br>
+    <button id="captureBtn" class="btn">Capture</button>
+  </section>
+
+  <section class="photo-strip-container">
+    <h2>Your Photo Strip</h2>
+    <div class="photo-strip" id="photoStrip"></div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bideshi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Bideshi</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="booth.html">Photobooth</a>
+      <a href="upload.html">Upload</a>
+      <a href="best.html">Best of the Month</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/hero-photo.jpg" alt="Bideshi Hero" class="hero-image">
+    <h1>Celebrate Moments with Bideshi</h1>
+    <p>Snap fun photos, upload favorites, and share your memories!</p>
+    <a href="booth.html" class="btn">Start Photobooth</a>
+    <a href="upload.html" class="btn-secondary">Upload Photo</a>
+  </section>
+
+  <!-- Best of the Month Preview -->
+  <section class="featured">
+    <h2>Best of the Month Preview</h2>
+    <div class="photo-strip" id="homeBestPreview"></div>
+  </section>
+
+  <script src="js/main.js"></script>
+  <script>
+    const previewContainer = document.getElementById('homeBestPreview');
+    if(previewContainer){
+      const featuredPhotos = JSON.parse(localStorage.getItem('featuredPhotos')) || [];
+      featuredPhotos.slice(-5).forEach(src => addPhotoToStrip(src, previewContainer, false));
+    }
+  </script>
+</body>
+</html>
